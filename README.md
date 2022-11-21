@@ -1,3 +1,5 @@
+### This Application is up and running, incase API data is not fetched, due to "Blocked-content, then kindly allow the URL in you setting
+### Follow this step: [Step To Allow URL](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en)
 ### Application Link : [Demo](https://gentle-gecko-3b4895.netlify.app/)
 ### Problem Statement
 * ### Create the view in react
