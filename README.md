@@ -1,4 +1,4 @@
-### Application Link : [Demo](https://preeminent-otter-31a9ed.netlify.app/)
+### Application Link : [Demo](https://gentle-gecko-3b4895.netlify.app/)
 ### Problem Statement
 * ### Create the view in react
     * Navigation bar with drop down for Revenue Type on right and a greeting for user on the left.
@@ -16,7 +16,7 @@
  </a>
 </p>
 
-### Application Link : [Demo](https://preeminent-otter-31a9ed.netlify.app/)
+### Application Link : [Demo](https://gentle-gecko-3b4895.netlify.app/)
 
 This is a WhatsApp web client Application, which supports basic features of WhatsApp web.
 ### Features are:
