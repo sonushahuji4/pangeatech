@@ -1,0 +1,16 @@
+.navbar-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    height: 10vh;
+
+    .revenue-drop-down{
+        margin-left: 50px;
+    }
+
+    .name-attribute{
+        margin-right: 50px;
+    }
+}
