@@ -23,7 +23,8 @@ const Navbar = ({revenueTypes,selectRevenueType,setSelectRevenueType}: Props) =>
     return(
         <div className="navbar-container">
             <div className="revenue-drop-down">{getDropDown()}</div>
-            <div className="name-attribute">{"Hi Sonu Shahuji"}</div>
+            <div className="name-attribute">
+            {"Hi, there!"}</div>
         </div>
     )
 }

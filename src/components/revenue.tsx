@@ -8,32 +8,24 @@ interface Props {
 const Revenue = ({seriesValues}: Props) => {
     const options = {
         chart: {
-          type: "line"
+          type: "line",
+          height: (10 / 16 * 100) + '%',
+          width: 800
         },
         title: {
-          text: "Revenue Chart"
+          text: ""
         },
         yAxis: {
             title: {
-                text: 'Fruit eaten'
+                text: ''
             }
         },
         series: seriesValues
     };
 
     return(
-        <div className='container'>
-            <div className='highcharts-chart-container'>
-                <div className='revenue-type-drop-down'>
-
-                </div>
-                <div className='revenue-chart'>
-                    <HighchartsReact highcharts={Highcharts} options={options} />
-                </div>
-            </div>
-            <div className='revenue-tables-container'>
-              {"asdfhklshadlkfhlkshadlkfhksadf"}
-            </div>
+        <div className='highcharts-chart-container'>
+          <HighchartsReact highcharts={Highcharts} options={options} />
         </div>
     )
 }

@@ -12,3 +12,44 @@ export const MONTH_NAMES: any = {
     November: 11,
     December: 12,
   };
+
+export const TABLE_COLOMN = [
+  {
+      Header: 'S No.',
+      accessor: 'S_no'
+  },
+  {
+      Header: 'Line Of Business',
+      accessor: 'line_of_business',
+      width: 200
+  },
+  {
+      Header: 'Revenue Type',
+      accessor: 'revenue_type',
+      width: 200
+  },
+  {
+      Header: 'Product',
+      accessor: 'product'
+  },
+  {
+      Header: 'Year',
+      accessor: 'year'
+  },
+  {
+      Header: 'Month',
+      accessor: 'month'
+  },
+  {
+      Header: 'ACV',
+      accessor: 'acv'
+  },
+  {
+      Header: 'TCV',
+      accessor: 'tcv'
+  },
+  {
+      Header: 'Revenue',
+      accessor: 'revenue'
+  }
+]

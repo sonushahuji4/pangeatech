@@ -1,20 +1,8 @@
-.container{
+.highcharts-chart-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .highcharts-chart-container{
-        .revenue-type-drop-down{
-
-        }
-        .revenue-chart{
-            
-        }
-    }
-
-    .revenue-tables-container{
-
-    }
-
+    z-index: 50;
+    overflow: hidden;
 }

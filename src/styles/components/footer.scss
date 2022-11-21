@@ -1,0 +1,19 @@
+.footer-conatiner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c7ed6;
+    height: 20vh;
+
+    span{
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+}

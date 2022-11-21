@@ -1,0 +1,16 @@
+.table-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ReactTable {
+    .rt-thead.-header{
+      background-color: #4dabf7;
+      color: #fff;
+      font-weight: bold;
+    }
+    .rt-tbody{
+      text-align: center
+    }
+  }
+}

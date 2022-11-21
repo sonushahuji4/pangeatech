@@ -4,11 +4,12 @@ import { Utils } from '../helper/utils';
 
 const Revenue = () => {
     const [revenue, setRevenue] = useState([]);
-    const [revenueTypes, setRevenueTypes] = useState({});
+    const [revenueTypes, setRevenueTypes] = useState<any[string]>([]);
     const [revenueTypesMappedToProduct, setRevenueTypesMappedToProduct] = useState<any>({});
     const [products, setProducts] = useState<any>({});
     const [seriesValues, setSeries] = useState<any[]>([]);
-    const [selectRevenueType, setSelectRevenueType] = useState<string>("ALL");
+    const [selectRevenueType, setSelectRevenueType] = useState<string>("All Revenue Type");
+    const [tableData, setTableData] = useState<any[]>([]);
 
 
     useEffect(() => {
@@ -24,19 +25,19 @@ const Revenue = () => {
 
     useMemo(() => {
         if(revenue){
-            const {revenueTypes, revenueTypesMappedToProduct, products,seriesData} = Utils.segregateAndClubInProducts(revenue);
-            setRevenueTypes(revenueTypes)
+            const {revenueTypes, revenueTypesMappedToProduct, products,seriesData,tableData} = Utils.segregateAndClubInProducts(revenue);
+            setRevenueTypes([...revenueTypes])
             setRevenueTypesMappedToProduct(revenueTypesMappedToProduct)
             setProducts(products)
             setSeries(seriesData)
+            setTableData(tableData);
 
         }
     },[revenue]);
 
     useEffect(() => {
         if(selectRevenueType && revenueTypesMappedToProduct){
-            console.log("selectRevenueType :",selectRevenueType);
-            const listOfProductsInRevenue = revenueTypesMappedToProduct.get("Revenue Type -11") || []; //selectRevenueType
+            const listOfProductsInRevenue = revenueTypesMappedToProduct.get(selectRevenueType) || [];
             const seriesData: any = [];
             listOfProductsInRevenue.forEach((key: string) => {
                 seriesData.push({
@@ -46,9 +47,9 @@ const Revenue = () => {
             });
             setSeries(seriesData);
         }
-    },[selectRevenueType,revenueTypesMappedToProduct])
+    },[selectRevenueType])
 
-    return { revenueTypes, revenueTypesMappedToProduct, products, seriesValues,selectRevenueType,setSelectRevenueType }
+    return { revenueTypes, seriesValues,selectRevenueType,setSelectRevenueType,tableData }
 }
 
 export default Revenue;
